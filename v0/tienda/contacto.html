@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"><!-- Codificación del documento -->
+    <title>MovilMANIA</title><!-- Titulo de la página -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"><!-- Icono de la página -->
+	<link rel="stylesheet" type="text/css" href="./assets/style.css" media="screen" /><!-- Importando CSS para el diseño -->
+	<link rel="stylesheet" type="text/css" href="./assets/style-print.css" media="print" /><!-- Importando CSS para el diseño impreso -->
+    
+  </head>
+  
+  <body class="contacto">
+    <header> 
+		<h1>MovilMANIA</h1>
+		
+		<nav>
+		  <div><a href="index.html">🏠 Inicio</a></div>
+		  <div><a href="productos.html">📱 Productos</a></div>
+		  <div><a href="contacto.html">🔍 Contacto</a></div>
+		  </nav>
+		  <div class="cuenta"><a href="sign-in.html">👁️‍🗨️ Cuenta</a></div>
+		  <div class="cesta"><a href="cesta.html">🛒Cesta</a></div>
+	  </header>
+
+
+
+<main>
+	
+	<aside>
+		<h2>🔍 Contacto</h2>
+		<ul>
+			<li> Antonio Gat Fernández	</li>
+			<li> +34 924 53 73 35 </li>
+			<li> antoniogatfernandez@iescastelar.com</li>
+			<li>Av. Santiago Ramón y Cajal, 2, 06001 Badajoz</li>
+		</ul>
+		<iframe id="map-canvas" class="map_part" height="450" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=IES Castelar&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+	</aside>
+	
+	<section class="formulario">
+
+		<div>
+			<form action="" >
+
+				<h2>Formulario de Contacto</h2>
+
+				<div>
+					<p> NIF o NIE: <input type="text" name="dni" maxlength="8" placeholder="########" required></p>
+					<p> Nombre: <input type="text" name="nombres" maxlength="15"  placeholder="Juan"></p>
+					<p> Apellidos: <input type="text" name="apellidos" maxlength="40"  placeholder="Benitez Garcia"></p>
+					<p> Correo Electrónico: <input type="text" name="correo" maxlength="50"  placeholder="example@iescastelar.com"  required></p>
+				</div>
+
+				<div>
+					<p> Pais de Contacto: <input type="text" list="pais" name="pais"  required>
+						<datalist id="pais">
+							<option value="España">
+							<option value="Francia">
+							<option value="Alemania">
+							<option value="Italia">
+							<option value="Portugal">
+							<option value="Reino Unido">
+							<option value="EEUU">
+							<option value="Japon">
+							<option value="China">
+							<option value="Rusia">
+						</datalist>
+					</p>
+					
+					<p> Escribe tu mensaje: <br>
+						<textarea name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios"></textarea>
+					</p>
+				</div>
+
+				<div>
+					<p><input type="checkbox" name="privacidad" required> Aceptas las Condiciones de Privacidad</p>
+					<p><input type="checkbox" name="newsletter" checked> Suscribete a la NewsLetter</p>
+				</div>
+				
+				<p>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Borrar">
+				</p>
+				
+			</form>
+		</div>
+</section>
+	
+</main>
+
+<footer>
+	<a href="aviso-legal.html">© Antonio Gat Fernández - 2024</a>
+</footer>
+  
+  </body>
+  
+</html>

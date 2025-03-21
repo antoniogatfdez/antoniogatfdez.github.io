@@ -1,0 +1,264 @@
+/* ---------------------------------------
+
+  BASICOS
+
+------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header, footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px #0000001a;
+  }
+  
+  /* ---------------------------------------
+  
+    HEADER
+  
+  ------------------------------------------*/
+  
+  header h1, header h2 {
+    margin: 1rem 0;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  
+  /* ---------------------------------------
+  
+    CUERPO
+  
+  ------------------------------------------*/
+  
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  /* ---------------------------------------
+  
+    ARTICLE
+  
+  ------------------------------------------*/
+  
+  article {
+      background-color: white;
+      padding: 1rem;
+      margin: 5px auto;
+      box-shadow: 0 4px 10px #1b02721a;
+      border-radius: 15px;
+      padding: auto;
+  } 
+  
+  article h3{
+      text-align: center;
+      margin-bottom: 5px;
+  }
+  
+  article p{
+      text-align: center;
+      margin-top: 2px;
+  }
+  
+  article ul {
+      text-align: center;
+      list-style-position: inside;
+  }
+  
+  article a{
+      text-decoration: none;
+      color:black;
+  }
+  
+  article a:active{
+      text-decoration: none;
+      color:black;
+  }
+  
+  article a:hover{
+      text-decoration: none;
+      color:black;
+  }
+  
+  article a:visited{
+      text-decoration: none;
+      color:black;
+  }
+  
+  /* ---------------------------------------
+  
+    ASIDE
+  
+  ------------------------------------------*/
+  
+  aside {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px #1b02721a;
+    border-radius: 5px;
+  }
+  
+  aside h2{
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  
+  aside p{
+      text-align: center;
+      margin-top: 5px;
+  }
+  
+  /* ---------------------------------------
+  
+    SECTIONS
+  
+  ------------------------------------------*/
+  
+  section {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  section table, section th, section td {
+    border: 1px solid #ddd;
+  }
+  
+  section th, section td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  section th {
+    background-color: #f8f9fa;
+  }
+  
+  /* ---------------------------------------
+  
+    FOOTER
+  
+  ------------------------------------------*/
+  
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a{
+      text-decoration: none;
+      color:white;
+  }
+  
+  footer a:active{
+      text-decoration: none;
+      color:black;
+  }
+  
+  footer a:hover{
+      text-decoration: none;
+      color:black;
+  }
+  
+  footer a:visited{
+      text-decoration: none;
+      color:black;
+  }
+  
+  footer .lenguajes {
+    display: none;
+  }
+  
+  /* ---------------------------------------
+  
+    FORMULARIO
+  
+  ------------------------------------------*/
+  
+    .formulario {
+      background-color: #fff;
+      padding: 20px;
+      margin: 5px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px #1b02721a;
+      max-width: 600px;
+  }
+  .formulario div {
+      margin-bottom: 15px;
+  }
+  .formulario p {
+      margin: 0 0 10px;
+  }
+  .formulario input[type="text"],
+  .formulario input[type="password"],
+  .formulario input[type="date"],
+  .formulario input[type="time"],
+  .formulario input[type="number"],
+  .formulario input[type="color"],
+  .formulario input[type="range"],
+  .formulario input[type="email"],
+  .formulario select,
+  .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+  .formulario input[type="radio"],
+  .formulario input[type="checkbox"] {
+      margin-right: 10px;
+  }
+  .formulario input[type="submit"],
+  .formulario input[type="reset"] {
+      background-color: lightblue;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+  }
+  .formulario input[type="submit"]:hover{
+    background-color: green;
+    color: white;
+  }
+  .formulario input[type="reset"]:hover {
+      background-color: red;
+      color: white;
+  }

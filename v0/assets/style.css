@@ -1,0 +1,297 @@
+/* 
+BASE
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 
+HEADER
+*/
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px black;
+}
+
+header h1, header h2 {
+  margin: 0.5rem 0;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  background-color: #44555c;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+header nav div a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav div a:hover {
+  background-color: #87CEEB;
+  color: #282c34;
+}
+
+/* 
+MAIN
+*/
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* 
+ASIDE
+*/
+aside {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px black;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+aside h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* 
+SECTION
+*/
+section {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 
+ARTICLE
+*/
+article {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px black;
+}
+
+article h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+article ul {
+  list-style-position: inside;
+  margin-left: 1rem;
+  line-height: 1.6;
+}
+
+article a {
+  color: #282c34;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+article a:hover {
+  color: #87CEEB;
+}
+
+.boton-tienda{
+  background-color: #282c34;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* 
+TABLA
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* 
+FORMULARIO
+*/
+.formulario {
+  width: 100%;
+  max-width: 800px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario div p {
+  margin: 0.5rem 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"],
+.formulario input[type="date"],
+.formulario input[type="time"],
+.formulario input[type="number"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"],
+button {
+  background-color: #282c34;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario input[type="submit"]:hover,
+button:hover {
+  background-color: #87CEEB;
+  color: #282c34;
+}
+
+.formulario input[type="reset"]:hover {
+  background-color: #dc3545;
+}
+
+/* 
+FOOTER
+*/
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer .lenguajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+footer .lenguaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  transition: background-color 0.3s;
+  border-radius: 6px;
+}
+
+footer .lenguaje img {
+  margin-right: 0.5rem;
+  max-height: 24px;
+}
+
+footer .lenguaje:hover {
+  background-color: #87CEEB;
+  color: #282c34;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav {
+    grid-template-columns: 1fr;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  .formulario form {
+    padding: 1rem;
+  }
+  
+  footer .lenguajes {
+    grid-template-columns: 1fr;
+  }
+}

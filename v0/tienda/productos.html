@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"><!-- Codificación del documento -->
+    <title>MovilMANIA</title><!-- Titulo de la página -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"><!-- Icono de la página -->
+	<link rel="stylesheet" type="text/css" href="./assets/style.css" media="screen" /><!-- Importando CSS para el diseño -->
+	<link rel="stylesheet" type="text/css" href="./assets/style-print.css" media="print" /><!-- Importando CSS para el diseño impreso -->
+    
+  </head>
+  
+  <body>
+    <header> 
+		<h1>MovilMANIA</h1>
+		
+		<nav>
+		  <div><a href="index.html">🏠 Inicio</a></div>
+		  <div><a href="productos.html">📱 Productos</a></div>
+		  <div><a href="contacto.html">🔍 Contacto</a></div>
+		  </nav>
+		  <div class="cuenta"><a href="sign-in.html">👁️‍🗨️ Cuenta</a></div>
+		  <div class="cesta"><a href="cesta.html">🛒Cesta</a></div>
+	  </header>
+
+
+
+<main>
+	
+	<aside>
+		<h2>🎛️ Filtros</h2>
+		<form>
+			<label for="marca">Marca:</label>
+			<select id="marca">
+				<option value="apple">Apple</option>
+				<option value="samsung">Samsung</option>
+				<option value="huawei">Huawei</option>
+				<option value="oneplus">OnePlus</option>
+				<option value="honor">Honor</option>
+				<option value="realme">Realme</option>
+				<option value="xiaomi">Xiaomi</option>
+			</select> <br>
+			<label for="precio">Precio:</label>
+			<input type="range" id="precio" name="precio" min="0" max="1000" step="100" value="0">
+			<p>0€ - 1000€</p>
+			<button>Filtrar</button>
+		</form>
+	</aside>
+	
+	<section class="productoview">	
+
+		<h2>📱 Productos</h2>
+		<p>En esta sección podrás encontrar los productos que tenemos disponibles en nuestra tienda.</p>
+		<p>¡No te los pierdas!</p>
+		
+		<div class="productos">
+			<div class="producto">
+				<img src="./img/S24ULTRA.png" alt="Samsung Galaxy S24 ULTRA" />
+				<h3>Samsung Galaxy S24 ULTRA</h3>
+				<p></p>
+				<p class="precio">Desde 1349€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/S23ULTRA.png" alt="Samsung Galaxy S23 ULTRA" />
+				<h3>Samsung Galaxy S23 ULTRA</h3>
+				<p></p>
+				<p class="precio">Desde 1199€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/ONEPLUS10PRO.png" alt="OnePlus 10 PRO" />
+				<h3>OnePlus 10 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 909€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/ONEPLUS10T.png" alt="OnePlus 10T" />
+				<h3>OnePlus 10T</h3>
+				<p></p>
+				<p class="precio">Desde 699€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/ONEPLUS12.png" alt="OnePlus 12" />
+				<h3>OnePlus 12</h3>
+				<p></p>
+				<p class="precio">Desde 999€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/HONORMAGIC6PRO.png" alt="HONOR MAGIC 6 PRO" />
+				<h3>Honor Magic 6 Pro</h3>
+				<p></p>
+				<p class="precio">Desde 1200€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/HONORMAGICV3.png" alt="HONOR MAGIC V3" />
+				<h3>Honor Magic V3</h3>
+				<p></p>
+				<p class="precio">Desde 1120€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/HUAWEIMATE50.png" alt="HUAWEI MATE 50" />
+				<h3>Huawei Mate 50</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/HUAWEIP50PRO.png" alt="HUAWEI P50 PRO" />
+				<h3>Huawei P50 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/HUAWEIPURA70.png" alt="HUAWEI PURA 70" />
+				<h3>Huawei Pura 70</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/REALME11PRO.png" alt="REALME 11 PRO" />
+				<h3>Realme 11 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/REALMEC33.png" alt="REALME C33" />
+				<h3>Realme C33</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/REALMEGT6.png" alt="REALME GT6" />
+				<h3>Realme GT6</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/REALMEGT7PRO.png" alt="REALME GT7 PRO" />
+				<h3>Realme GT7 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/XIAOMI12PRO.png" alt="XIAOMI 12 PRO" />
+				<h3>Xiaomi 12 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/XIAOMI13PRO.png" alt="XIAOMI 13 PRO" />
+				<h3>Xiaomi 13 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/XIAOMI14ULTRA.png" alt="XIAOMI 14 ULTRA" />
+				<h3>Xiaomi 14 ULTRA</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/XIAOMINOTE13PRO.png" alt="XIAOMI NOTE 13 PRO" />
+				<h3>Xiaomi Note 13 PRO</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/IPHONE15.png" alt="IPHONE15" />
+				<h3>iPhone 15</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+			<div class="producto">
+				<img src="./img/IPHONE15PRO.png" alt="IPHONE15PRO" />
+				<h3>iPhone 15 Pro</h3>
+				<p></p>
+				<p class="precio">Desde 749€</p>
+				<button>Añadir a la cesta</button>
+			</div>
+
+		</div>
+
+	</section>
+	
+</main>
+
+<footer>
+	<a href="aviso-legal.html">© Antonio Gat Fernández - 2024</a>
+</footer>
+  
+  </body>
+  
+</html>

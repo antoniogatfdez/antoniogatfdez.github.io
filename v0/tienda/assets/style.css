@@ -1,0 +1,404 @@
+/* 
+BASE
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+HEADER
+*/
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  flex: 1;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex: 2;
+}
+
+header .cuenta, 
+header .cesta {
+  padding: 0.5rem 1rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header a:hover,
+header a:visited {
+  color: #f0f0f0;
+}
+
+/* 
+MAIN
+*/
+main {
+  flex: 1;
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* 
+ASIDE
+*/
+aside {
+  flex: 0 0 250px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+aside h2 {
+  margin-bottom: 1rem;
+}
+
+aside ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+aside ul li {
+  margin-bottom: 0.5rem;
+}
+
+aside iframe {
+  width: 100%;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.contacto aside {
+  flex: 0 0 400px;
+}
+
+.contacto aside ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contacto aside li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.contacto aside iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+SECTION
+*/
+section {
+  flex: 1;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boton-eliminar {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-eliminar button:hover {
+  background-color: #333;
+}
+
+.boton-pagar {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.boton-pagar:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+/* 
+PRODUCTOS
+*/
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.producto {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.producto h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.producto .precio {
+  color: #e41e31;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.producto button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+  background-color: #333;
+}
+
+/* 
+FORMULARIO
+*/
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formulario input[type="submit"],
+.formulario input[type="reset"] {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #2ecc71;
+}
+
+.formulario input[type="reset"]:hover {
+  background-color: #e74c3c;
+}
+
+/* 
+LOG IN
+*/
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.input {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.input input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: #666;
+}
+
+.input input:focus + label,
+.input input:valid + label {
+  top: -10px;
+  font-size: 0.875rem;
+  color: #0093e9;
+}
+
+.input input:focus {
+  border-bottom-color: #0093e9;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.boton-login {
+  background-color: #282c34;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* 
+FOOTER
+*/
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0093e9;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  aside {
+    flex: 0 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .productos {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

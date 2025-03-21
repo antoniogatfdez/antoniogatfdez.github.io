@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"><!-- Codificación del documento -->
+    <title>CURRICULUM - Contacto</title><!-- Titulo de la página -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon"><!-- Icono de la página -->
+	<link rel="stylesheet" type="text/css" href="./assets/style.css" media="screen" /><!-- Importando CSS para el diseño -->
+	<link rel="stylesheet" type="text/css" href="./assets/style-print.css" media="print" /><!-- Importando CSS para el diseño impreso -->
+
+  </head>
+  
+  <body>
+    <header> 
+      <h1>Antonio Gat Fernández</h1>
+      <h2> <i class="fa-solid fa-laptop-code"></i> Estudiante Desarrollo de Aplicaciones Web - IES Castelar</h2>
+
+	  <nav>
+		<div><a href="index.html">🏠 Inicio</a></div>
+		<div><a href="proyectos.html">💭 Proyectos</a></div>
+		<div><a href="frontend.html">💻 Frontend</a></div>
+		<div><a href="backend.html">🧰 Backend</a></div>
+		<div><a href="sistemas.html">⚠️ Sistemas</a></div>
+		<div><a href="skills.html">🦾 Skills</a></div>
+		<div><a href="softskills.html">📘 Soft-Skills</a></div>
+		<div><a href="contacto.html">🔍 Contacto</a></div>
+    	</nav>
+    </header>
+ 
+	<main> 
+		<aside>
+			<h2>📥 Contacto</h2>
+			<p> Ponte en contacto conmigo a través del formulario y te responderé lo más pronto posible. </p>
+		</aside>
+
+		<section class="formulario">
+
+				<div>
+					<form action="https://lmsgi.luiscastelar.duckdns.org/recibe_formulario.php" >
+						<div>
+							<p><input type="hidden" name="hidden" value="123456"></p>
+						</div>
+						<div>	
+							<p> Fecha del Envio: <input type="date" required autofocus></p>
+							<p> Hora del Envio: <input type="time"></p>
+						</div>
+
+						<div>
+							<p> NIF o NIE: <input type="text" name="dni" maxlength="8" placeholder="########" required></p>
+							<p> Nombre: <input type="text" name="nombres" maxlength="15" size="40" placeholder="Juan"></p>
+							<p> Apellidos: <input type="text" name="apellidos" maxlength="40" size="39" placeholder="Benitez Garcia"></p>
+							<p> Correo Electrónico: <input type="text" name="correo" maxlength="50" size="30" placeholder="example@iescastelar.com"  required></p>
+							<p> Contraseña: <input type="password" minlength="6" size="37" placeholder="************"/></p>
+							<p> Edad: <input type="range" min="18" max="85" step="1" /></p>
+							<p> Sexo: 
+								<input type="radio" name="sexo" value="h"> Hombre
+								<input type="radio" name="sexo" value="m"> Mujer
+							</p>
+						</div>
+
+						<div>
+							<p> Número de Hermanos: <input type="number" name="hermanos" min="0" max="30" step="1" /></p>
+							<p> Pais de Contacto: <input type="text" list="pais" name="pais" size="32" required>
+								<datalist id="pais">
+									<option value="España">
+									<option value="Francia">
+									<option value="Alemania">
+									<option value="Italia">
+									<option value="Portugal">
+									<option value="Reino Unido">
+									<option value="EEUU">
+									<option value="Japon">
+									<option value="China">
+									<option value="Rusia">
+								</datalist>
+							</p>
+							<p> Estado Civil: 
+								<select name="estadoc">
+								<option value="soltero" selected>Soltero</option>
+								<option value="divorciado" >Divorciado</option>
+								<option value="relacion">En Relación</option>
+								<option value="casado">Casado</option>
+								</select>
+							</p>
+							<p> Estudios: 
+								<select name="estudios" multiple required>
+								<option value="eso" selected>ESO</option>
+								<option value="fpb" >FP Basica</option>
+								<option value="bach" >Bachillerato</option>
+								<option value="cfgm">Grado Medio</option>
+								<option value="cfgs">Grado Superior</option>
+								<option value="univ">Universidad</option>
+								</select>
+							</p>
+							<p> Color Favorito: <input type="color" name="color" /></p>
+							<p> Comentarios: <br>
+								<textarea name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios"></textarea>
+							</p>
+						</div>
+
+						<div>
+							<p> Aceptas las Condiciones de Privacidad <input type="checkbox" name="privacidad" required></p>
+							<p> Suscribete a la NewsLetter <input type="checkbox" name="newsletter" checked></p>
+						</div>
+						
+						<p>
+							<input type="submit" value="Enviar">
+							<input type="reset" value="Borrar">
+						</p>
+						
+					</form>
+				</div>
+		</section>
+	</main>
+
+	<footer>
+		<a href="aviso-legal.html">© Antonio Gat Fernández - 2024</a>
+		<div class="lenguajes">
+			<label>Lenguajes:	</label>
+			<div class="lenguaje"><a href="https://ude.my/UC-fc6c512c-1b38-4696-ae73-bd2c789a0955?trk=public_profile_see-credential">
+				<img src="./img/logojs.png" title="Icono de JS" alt="JavaScript" /> JavaScript</div>
+			<div class="lenguaje"><a href="https://ude.my/UC-e28842bf-487c-4b34-a8dd-e2c74f9d8d2d?trk=public_profile_see-credential">
+				<img src="./img/logophp.png" title="Icono de PHP" alt="PHP" />PHP</div>
+			<div class="lenguaje"><a href="https://cursos.devtalles.com/certificates/yt2yraw5ul?trk=public_profile_see-credential">
+				<img src="./img/logoshadcnui.png" title="Icono de ShadcnUI" alt="ShadcnUI" />ShadcnUI</div>
+		  </div>
+	</footer>
+
+	</body>
+
+</html>
