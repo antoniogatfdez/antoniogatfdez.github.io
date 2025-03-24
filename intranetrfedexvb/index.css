@@ -1,0 +1,225 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Comfortaa';
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #c4e7c0;
+  }
+  
+  header {
+    background-color: #121026;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+
+
+/* Tablas INDEX*/
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px; /* add this line */
+  overflow: hidden; /* add this line */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.table th, .table td {
+  /*border: 1px solid #000000; */
+  padding: 8px;
+  text-align: left;
+  border-radius: 10px; /* add this line */
+  text-align: center;
+}
+
+.table th {
+  background-color: #3d7319;
+}
+
+.table tr {
+  background-color: #76f0a5;
+}
+/*
+.table tr:hover {
+  background-color: #76f0a5;
+} */
+
+/* Botones de editar y eliminar */
+.editar-btn, .eliminar-btn {
+  display: inline-block; /* already added */
+  /*margin-right: 10px;  add some space between buttons */
+  flex: 1; /* make both buttons take equal space */
+}
+
+.editar-btn {
+  background-color: #4CAF50; /* Verde */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block; /* Agregamos esta propiedad */
+  margin-left: 100px;
+  float: left;
+}
+
+.editar-btn:hover {
+  background-color: #3e8e41; /* Verde oscuro */
+}
+
+.eliminar-btn {
+  background-color: #FF0000; /* Rojo */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block; /* Agregamos esta propiedad */
+  margin-right: 100px;
+  float: right;
+}
+
+.eliminar-btn:hover {
+  background-color: #cc0000; /* Rojo oscuro */
+}
+
+.fas {
+  font-size: 15px;
+}
+
+/* LOGIN */
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px; /* Adjust the width to your liking */
+  padding: 20px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form label {
+  margin-bottom: 10px;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 50px;
+}
+
+#login-form input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#login-form input[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green background on hover */
+}
+
+
+/* Intranet */
+
+/* Target the.form-input class */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+/* Target the.form-submit class */
+.form-submit {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #3e8e41;
+}
+
+
+/* Registro */
+.main-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.input-field {
+  width: 90%;
+  height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.input-field:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+  width: 96%;
+  height: 50px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3e8e41;
+}

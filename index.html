@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!--<link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">-->
 
   <!--
     - custom css link
@@ -46,8 +46,8 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Antonio Gat Fernández">Antonio Gat </h1>
-
+          <!-- <h1 class="name" title="Antonio Gat Fernández" href="https://antoniogatfdez.com">Antonio Gat </h1>   -->
+          <a class="name" href="https://antoniogatfdez.es/">Antonio Gat</a>
           <p class="title">Desorrollador Web</p>
         </div>
 
@@ -1313,7 +1313,7 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199485.15014172404!2d-6.473336901857668!3d38.62690543964595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd140496f0ef4d4f%3A0x2792a42224fb51c0!2sTierra%20de%20Barros%2C%20Badajoz!5e0!3m2!1ses!2ses!4v1742512972214!5m2!1ses!2ses"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6240.507716134388!2d-6.249630208720854!3d38.55096458694759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd14061f99292445%3A0xc0bba8f7d155b4a1!2s06225%20Ribera%20del%20Fresno%2C%20Badajoz!5e0!3m2!1ses!2ses!4v1742813622970!5m2!1ses!2ses"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
@@ -1322,7 +1322,9 @@
 
           <h3 class="h3 form-title">Formulario de Contacto</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://api.web3forms.com/submit"  method="POST" class="form" data-form >
+
+            <input type="hidden" name="access_key" value="3b51329d-8545-42bf-8c55-38cffc92c4a8">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Nombre Completo" required data-form-input>
@@ -1332,7 +1334,7 @@
 
             <textarea name="message" class="form-input" placeholder="Redacta tu mensaje" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit"  data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Enviar Mensaje</span>
             </button>
@@ -1344,6 +1346,7 @@
       </article>
 
     </div>
+    
 
   </main>
 
