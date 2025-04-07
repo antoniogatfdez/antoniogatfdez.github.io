@@ -1,0 +1,122 @@
+.task-list {
+    margin: 20px 0;
+    padding: 0;
+    max-height: 500px; /* Altura máxima para el listado */
+    overflow-y: auto; /* Habilitar scroll vertical */
+    border: 1px solid #ddd; /* Borde para separar visualmente */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #1e1e1f; /* Fondo claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+
+.tasks {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Asegura que los elementos estén separados */
+  margin-bottom: 10px;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no hay espacio */
+}
+
+.task-checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  flex: 1; /* Permite que el texto ocupe el espacio disponible */
+  word-wrap: break-word; /* Ajusta las palabras largas */
+  overflow-wrap: break-word; /* Ajusta las palabras largas */
+  margin-right: 10px; /* Espaciado entre el texto y otros elementos */
+}
+
+.task-checkbox:checked + .task-label {
+  text-decoration: line-through;
+  color: #3a3a3a;
+}
+
+.main-content {
+  position: relative; /* Asegura que los elementos hijos puedan posicionarse dentro de este contenedor */
+}
+
+.task-input-container {
+  position: static; /* Cambiar de absolute a static para que se posicione naturalmente */
+  margin-top: 100px; /* Incrementar el margen superior para mover el input más abajo */
+  width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+  background-color: #1e1e1f; /* Fondo */
+  padding: 15px 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  display: flex;
+  align-items: center;
+  z-index: auto; /* Eliminar prioridad de apilamiento */
+  border-radius: 10px; /* Bordes redondeados */
+  border-top: none; /* Eliminar la línea superior */
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 25px; /* Bordes redondeados */
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.task-input:focus {
+  border-color: #346552; /* Color de borde al enfocar */
+  box-shadow: 0 4px 8px rgba(42, 59, 44, 0.2); /* Sombra más pronunciada */
+}
+
+.add-task-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #346552;
+  border: none;
+  border-radius: 25px; /* Bordes redondeados */
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.add-task-button:hover {
+  background-color: #346552;
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+.add-task-button:active {
+  transform: scale(0.95); /* Efecto de clic */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+.task-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4d;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.task-delete:hover {
+  color: #ff0000;
+}
