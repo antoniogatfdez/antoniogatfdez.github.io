@@ -1,13 +1,15 @@
 .task-list {
-    margin: 20px 0;
-    padding: 0;
-    max-height: 500px; /* Altura máxima para el listado */
-    overflow-y: auto; /* Habilitar scroll vertical */
-    border: 1px solid #ddd; /* Borde para separar visualmente */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: #1e1e1f; /* Fondo claro */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  }
+  position: static;
+  background-color: #1e1e1f;
+  margin: 20px 0;
+  padding: 0;
+  max-height: 560px;
+  overflow-y: auto;
+  border: none; /* Eliminar borde */
+  border-radius: 10px;
+  background-color: #1e1e1f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 .tasks {
   list-style: none;
@@ -54,7 +56,7 @@
 
 .task-input-container {
   position: static; /* Cambiar de absolute a static para que se posicione naturalmente */
-  margin-top: 100px; /* Incrementar el margen superior para mover el input más abajo */
+  margin-top: 1px; /* Incrementar el margen superior para mover el input más abajo */
   width: 100%; /* Asegurar que ocupe todo el ancho disponible */
   background-color: #1e1e1f; /* Fondo */
   padding: 15px 20px;
@@ -106,6 +108,30 @@
 .add-task-button:active {
   transform: scale(0.95); /* Efecto de clic */
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+.delete-task-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #346552;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete-task-button:hover {
+    color: #ffffff;
+  background-color: #346552;
+  transform: scale(1.05);
+}
+
+.delete-task-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .task-delete {
