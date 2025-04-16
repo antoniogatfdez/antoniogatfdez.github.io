@@ -60,18 +60,31 @@ document.addEventListener("DOMContentLoaded", () => {
     saveTasks();
     newTaskInput.value = "";
   });
-  
+
+  // Detectar la tecla "Enter" en el input
+  newTaskInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      const taskText = newTaskInput.value.trim();
+      if (taskText === "") return;
+
+      addTaskToDOM(taskText);
+      saveTasks();
+      newTaskInput.value = "";
+    }
+  });
+
   deleteTaskButton.addEventListener("click", () => {
-      confirm("¿Estas seguro de borrar todos los seleccionados?")
+    if (confirm("¿Estás seguro de borrar todos los seleccionados?")) {
       const checkedTasks = document.querySelectorAll(".task-checkbox:checked");
-      
-      checkedTasks.forEach(checkbox => {
-          const taskItem = checkbox.closest(".task-item");
-          if (taskItem) {
-              taskList.removeChild(taskItem);
-          }
+
+      checkedTasks.forEach((checkbox) => {
+        const taskItem = checkbox.closest(".task-item");
+        if (taskItem) {
+          taskList.removeChild(taskItem);
+        }
       });
       saveTasks();
+    }
   });
 
   loadTasks();
