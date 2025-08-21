@@ -1,0 +1,128 @@
+/* Estilos para barra de búsqueda reutilizable */
+.search-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-input-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-input-icon {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.search-input-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--medium-gray);
+    z-index: 2;
+}
+
+.search-input-field {
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid var(--light-gray);
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.search-input-field:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.search-input-field::placeholder {
+    color: var(--medium-gray);
+    font-style: italic;
+}
+
+.search-clear-btn {
+    background: var(--medium-gray);
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.search-clear-btn:hover {
+    background: var(--primary-black);
+    transform: translateY(-1px);
+}
+
+.search-info {
+    color: var(--medium-gray);
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.search-help {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--medium-gray);
+}
+
+/* Efectos visuales para tablas con búsqueda */
+.searchable-table tbody tr {
+    transition: background-color 0.2s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.searchable-table tbody tr:hover {
+    background-color: rgba(46, 125, 50, 0.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-input-icon {
+        min-width: 100%;
+    }
+
+    .search-input-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-clear-btn {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .search-input-field {
+        font-size: 16px; /* Evita zoom en iOS */
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input-field {
+        padding: 10px 15px 10px 35px;
+    }
+
+    .search-input-icon i {
+        left: 12px;
+    }
+}
