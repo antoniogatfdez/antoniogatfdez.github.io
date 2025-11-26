@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirigiendo…</title>
+    <meta name="robots" content="noindex" />
+    <!-- Fallback meta refresh por si JS está deshabilitado -->
+    <meta http-equiv="refresh" content="2; url=https://antoniogatfdez.me" />
+    <style>
+      :root {
+        --bg: #0f172a;
+        --fg: #e2e8f0;
+        --accent: #60a5fa;
+        --muted: #94a3b8;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        background: radial-gradient(1200px 800px at 50% 20%, #111827, var(--bg));
+        color: var(--fg);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        display: grid;
+        place-items: center;
+      }
+      .stage {
+        display: grid;
+        gap: 14px;
+        align-items: center;
+        justify-items: center;
+      }
+      .spinner {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        filter: drop-shadow(0 2px 8px rgba(96,165,250,.35));
+      }
+      .spinner::before, .spinner::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        inset: 0;
+        border: 3px solid transparent;
+      }
+      .spinner::before {
+        border-top-color: var(--accent);
+        border-left-color: var(--accent);
+        animation: spin 1s linear infinite;
+      }
+      .spinner::after {
+        inset: 8px;
+        border-right-color: var(--accent);
+        border-bottom-color: var(--accent);
+        animation: spin 1.6s linear infinite reverse;
+        opacity: .8;
+      }
+      @keyframes spin { to { transform: rotate(1turn); } }
+      .label {
+        font-size: 14px;
+        letter-spacing: .02em;
+        color: var(--muted);
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="stage" role="status" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <div class="label">Cargando… Te llevamos a <strong>antoniogatfdez.me</strong></div>
+      <noscript>
+        <div class="label">JavaScript está desactivado. Continúa en
+          <a href="https://antoniogatfdez.me">https://antoniogatfdez.me</a>
+        </div>
+      </noscript>
+      <span class="sr-only">Redirigiendo en unos instantes…</span>
+    </main>
+
+    <script>
+      // Redirección tras una breve animación
+      const target = 'https://antoniogatfdez.me';
+      const delayMs = 1600; // 1.6s para que el spinner sea visible
+
+      // Intento principal: tras cargar la página
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          try {
+            window.location.replace(target);
+          } catch (_) {
+            window.location.href = target;
+          }
+        }, delayMs);
+      });
+
+      // Salvaguarda por si load no se dispara
+      setTimeout(() => {
+        if (document.visibilityState !== 'hidden') {
+          try {
+            window.location.replace(target);
+          } catch (_) {
+            window.location.href = target;
+          }
+        }
+      }, delayMs + 1200);
+    </script>
+  </body>
+</html>
